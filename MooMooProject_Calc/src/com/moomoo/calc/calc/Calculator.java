@@ -108,7 +108,7 @@ public class Calculator {
     }
 
     private void initBuiltInFunctions() {
-        // FIXME: acosh, asinh, atanh, chop, clip.
+        // FIXME: acosh, asinh, atanh(¿ª ½Ö°î »ï°¢ÇÔ¼ö), chop(¿ìÃø °ø¹é Á¦°Å)
         addFunction(new CalculatorFunctions.Abs(),            "Abs");
         addFunction(new CalculatorFunctions.Acos(),           "Acos", "ArcCos");
         addFunction(new CalculatorFunctions.And(),            "And");
