@@ -1,4 +1,4 @@
-package com.moomoo.calc.err.copy;
+package com.moomoo.calc.err;
 
 /*
  * This file is part of org.jessies.calc.
