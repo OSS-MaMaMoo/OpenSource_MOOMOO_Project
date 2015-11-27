@@ -19,7 +19,7 @@ package com.moomoo.calc.test;
  */
 
 import junit.framework.TestCase;
-import static org.jessies.calc.UnitsConverter.*;
+import static com.moomoo.calc.parser.UnitsConverter.*;
 
 public class UnitsConverterTest extends TestCase {
     public void testTemperatureConversion() {
