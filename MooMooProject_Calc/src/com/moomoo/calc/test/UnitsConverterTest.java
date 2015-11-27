@@ -1,8 +1,8 @@
 package com.moomoo.calc.test;
 
 /*
- * This file is part of org.jessies.calc.
- * Copyright (C) 2011 Elliott Hughes <enh@jessies.org>.
+ * This file is part of com.moomoo.calc.
+ * Copyright (C) 2015 moomoo.
  * 
  * LittleHelper is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
