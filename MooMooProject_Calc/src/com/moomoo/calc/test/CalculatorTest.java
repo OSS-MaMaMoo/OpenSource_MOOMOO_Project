@@ -71,6 +71,8 @@ public class CalculatorTest extends TestCase {
     checkFormatted("-1,234", "-1234");
     checkFormatted("12,345", "12345");
     checkFormatted("-12,345", "-12345");
+    checkFormatted("1,234,567", "1234567");
+    checkFormatted("-1,234,567", "-1234567");
   }
 
   public void testArithmetic() {
@@ -96,6 +98,7 @@ public class CalculatorTest extends TestCase {
     check("10000.001", "0.001+10000");
     check("9999.999", "10000-0.001");
     check("-9999.999", "0.001-10000");
+    check("-9999.999", ".001-10000");
 
     // Check that we're doing decimal rather than binary arithmetic.
     check("0.1587", "1-0.8413");
@@ -110,10 +113,14 @@ public class CalculatorTest extends TestCase {
     check("9", "(1+2)*3");
 
     check("0.5", "1/2");
+    check("0.3333333333333333", "1/3");
 
     check("3", "3%4");
     check("0", "4%4");
     check("1", "5%4");
+    check("3", "3*6%5");
+    check("3", "1+2%3");
+    check("0", "(1+2)%3");
   }
 
   public void testRationalArithmetic() {
