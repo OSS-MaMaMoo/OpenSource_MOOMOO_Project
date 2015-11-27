@@ -36,7 +36,7 @@ public class CalculatorTest extends TestCase {
     Node result = c.evaluate(input);
     String actual = (formattedString ? result.toString() : result.toInputString());
     if (!actual.equals(expected)) {
-      throw new AssertionFailedError(input + " should be " + expected + " but was " + actual);
+      throw new AssertionError(input + " should be " + expected + " but was " + actual);
     }
   }
 
@@ -56,7 +56,7 @@ public class CalculatorTest extends TestCase {
     Node result = new Calculator().evaluate(input);
     double actual = ((NumberNode) result).toReal().doubleValue();
     if (Math.abs(actual - d) > tolerance) {
-      throw new AssertionFailedError(input + " should be " + d + " but was " + result);
+      throw new AssertionError(input + " should be " + d + " but was " + result);
     }
   }
 
