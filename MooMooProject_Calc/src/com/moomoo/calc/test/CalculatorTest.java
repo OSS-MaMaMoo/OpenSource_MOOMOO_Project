@@ -563,7 +563,7 @@ public class CalculatorTest extends TestCase {
     check("9.0", "Sqrt(81)");
     check("2.0", "\u221a4");
     // Check ?ˆš3*2 == 2*?ˆš3.
-    check(3.464101, "?ˆš3*2", 0.000001);
+    check(3.464101, "¡î3*2", 0.000001);
   }
 
   public void testSum() {
