@@ -180,6 +180,8 @@ public class CalculatorTest extends TestCase {
     check("true", "!(1==2)");
     check("false", "!(2==2)");
     check("true", "!!(2==2)");
+    check("false", "!(1+2==2+1)");
+    check("true", "!((1+2)*3==1+2*3)");
   }
 
   public void testLogicalAnd() {
@@ -187,6 +189,10 @@ public class CalculatorTest extends TestCase {
     check("false", "false&&true");
     check("false", "true&&false");
     check("true", "true&&true");
+    check("false", "(1==1)&&(3==1)");
+    check("false", "(3==1)&&(1==1)");
+    check("false", "(3==1)&&(3==1)");
+    check("true", "(1==1)&&(1==1)");
   }
 
   public void testLogicalOr() {
@@ -236,6 +242,7 @@ public class CalculatorTest extends TestCase {
     check("1", "BitGet(5, 2)");
     check("0", "BitGet(5, 3)");
     check("0", "BitGet(5, 4)");
+    check("1", "BitGet(8, 3)");
   }
 
   public void testBitClear() {
@@ -483,6 +490,7 @@ public class CalculatorTest extends TestCase {
 
     check("6", "3!");
     check("720", "3!!");
+    check("2", "2!!!");
   }
 
   public void testFactors() {
@@ -512,6 +520,7 @@ public class CalculatorTest extends TestCase {
     check("2", "GCD(-4, -14)");
     check("1", "GCD(9, 28)");
     check("3", "GCD(6E100000, 21E100000)/1E100000");
+    check("17", "GCD(34, 51)");
   }
 
   public void testIntegerLength() {
@@ -547,6 +556,7 @@ public class CalculatorTest extends TestCase {
     check("124", "Max(123, 124)");
     check("0.2", "Max(0.1, 0.2)");
     check("123.1", "Max(123, 123.1)");
+    check("1", "Max(1,-12345566778993847357569486942349320623978475293849768242349)");
   }
 
   public void testMin() {
@@ -555,6 +565,7 @@ public class CalculatorTest extends TestCase {
     check("123", "Min(123, 124)");
     check("0.1", "Min(0.1, 0.2)");
     check("123", "Min(123, 123.1)");
+    check("-123", "Min(123,-123)");
   }
 
   public void testSign() {
@@ -629,6 +640,7 @@ public class CalculatorTest extends TestCase {
     check("21", "LCM(-3, 7)");
     check("21", "LCM(3, -7)");
     check("21", "LCM(-3, -7)");
+    check("34", "LCM(2,17)");
   }
 
   public void testLists() {
