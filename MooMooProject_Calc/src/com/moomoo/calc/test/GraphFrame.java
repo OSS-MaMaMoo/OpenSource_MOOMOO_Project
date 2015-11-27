@@ -1,6 +1,6 @@
 /*
     JOpenChart Java Charting Library and Toolkit
-    Copyright (C) 2001  Sebastian Müller
+    Copyright (C) 2001  Sebastian Mï¿½ller
     http://jopenchart.sourceforge.net
 
     This library is free software; you can redistribute it and/or
@@ -21,8 +21,7 @@
     Created on 31. Mai 2001, 23:58
  */
 
-package de.progra.charting.test;
-
+package com.moomoo.calc.test;
 import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;

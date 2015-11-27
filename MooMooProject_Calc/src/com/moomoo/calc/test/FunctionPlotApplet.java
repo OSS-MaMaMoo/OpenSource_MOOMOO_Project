@@ -4,7 +4,7 @@
  * Created on 29. Juni 2002, 02:02
  */
 
-package de.progra.charting.test;
+package com.moomoo.calc.test;
 
 
 import de.progra.charting.*;
