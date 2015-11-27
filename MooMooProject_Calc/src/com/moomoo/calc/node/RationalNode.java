@@ -47,7 +47,7 @@ public class RationalNode implements Comparable<RationalNode>, NumberNode {
         }
     }
     
-    static NumberNode valueOf(IntegerNode p, IntegerNode q) {
+    public static NumberNode valueOf(IntegerNode p, IntegerNode q) {
         if (q.compareTo(IntegerNode.ONE) == 0) {
             return p;
         } else {
