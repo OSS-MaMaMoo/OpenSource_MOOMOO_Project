@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <ListView android:id="@+id/transcript" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1" android:stackFromBottom="true" android:transcriptMode="alwaysScroll" android:scrollbarStyle="outsideInset" android:focusable="false" />
+
+    <org.jessies.mathdroid.MathdroidEditText android:id="@+id/q" android:textSize="20sp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0" android:inputType="text|textNoSuggestions" />
+
+</merge>
