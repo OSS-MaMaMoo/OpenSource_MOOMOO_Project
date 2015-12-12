@@ -12,16 +12,19 @@ import android.util.Log;
 import android.view.*;
 import android.view.inputmethod.*;
 import android.widget.*;
+
 import java.util.*;
 
 import com.moomoo.calc.calc.Calculator;
 import com.moomoo.calc.err.CalculatorError;
+import com.moomoo.calc.node.Node;
 import com.moomoo.calc.node.StringNode;
+import com.moomoo.calc.parser.UnitsConverter;
 import com.moomoo.calc.plot.CalculatorPlotData;
 import com.moomoo.calc.plot.CalculatorPlotter;
 
 public class Mathdroid extends Activity implements AdapterView.OnItemClickListener, CalculatorPlotter, TextView.OnEditorActionListener, View.OnClickListener {
-    private static final String TAG = "Mathdroid";
+    private static final String TAG = "MooMoo";
 
     // Constants for the transcript context menu items.
     private static final int CONTEXT_MENU_RETYPE_SELECTED = 0;

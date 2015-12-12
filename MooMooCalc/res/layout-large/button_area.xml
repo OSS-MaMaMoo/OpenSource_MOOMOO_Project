@@ -2,7 +2,7 @@
 <merge xmlns:android="http://schemas.android.com/apk/res/android" >
 
     <!-- "scientific" keys -->
-    <org.jessies.mathdroid.BetterViewFlipper android:id="@+id/flipper" android:layout_width="wrap_content" android:layout_height="fill_parent" >
+    <com.moomoo.moomoocalc.BetterViewFlipper android:id="@+id/flipper" android:layout_width="wrap_content" android:layout_height="fill_parent" >
 
         <!-- unshifted variants -->
         <LinearLayout android:layout_width="wrap_content" android:layout_height="fill_parent" android:orientation="vertical">
@@ -52,7 +52,7 @@
             </LinearLayout>
         </LinearLayout>
 
-    </org.jessies.mathdroid.BetterViewFlipper>
+    </com.moomoo.moomoocalc.BetterViewFlipper>
 
     <!-- "basic" keys -->
     <include layout="@layout/button_area_basic_keys" />
